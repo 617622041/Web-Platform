@@ -13,10 +13,12 @@ import '@/assets/fonts/font-num.css'
 import 'iview/dist/styles/iview.css'
 // import '@/assets/change.iview.less'
 import '@/utils/date-extend.js'
-// import '../static/3D/Build/UnityLoader.js'
-// import '../static/3D/TemplateData/UnityProgress.js'
-// import '../static/3D/TemplateData/style.css'
 import '@/utils/format.js'
+
+import ant from 'ant-design-vue'
+import 'ant-design-vue/dist/antd.less'
+
+Vue.use(ant)
 
 Vue.prototype.$echarts = echarts
 Vue.config.productionTip = false
