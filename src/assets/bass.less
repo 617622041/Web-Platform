@@ -1,0 +1,250 @@
+/*BASSLESS*/
+//Font Size
+@Font_zn20: 0.2rem/1 '微软雅黑';
+@Font_zn20bd: bold 0.2rem/1 '微软雅黑';
+@Font_zn18: 0.18rem/1 '微软雅黑';
+@Font_zn16: 0.16rem/1 '微软雅黑';
+@Font_zn16bd: bold 0.16rem/1 '微软雅黑';
+@Font_zn14: 0.14rem/1 '微软雅黑';
+@Font_zn14bd: bold 0.14rem/1 '微软雅黑';
+@Font_zn12: 0.12rem/1 '微软雅黑';
+
+//Font Size EN
+@Font_en20: 0.2rem/1 Arial;
+@Font_en18: 0.18rem/1 Arial;
+@Font_en18bd: bold 0.18rem/1 Arial;
+@Font_en16: 0.16rem/1 Arial;
+@Font_en16bd: bold 0.16rem/1 Arial;
+@Font_en14: 0.14rem/1 Arial;
+@Font_en12: 0.12rem/1 Arial;
+
+//Font Color
+@Font_clr_main: #ffffff; /*forme too*/
+@Font_clr_sub: #718fb2;
+@Font_clr_link: #457ec1;
+@Font_clr_unblur: #2c3f5c;
+@Font_clr_btnhover: #457ec1;
+@Font_clr_placehold: #485e78;
+@icon_font_clr: #e5e5ff;
+@disable: #485e78;
+
+//icon
+@icon_clr_main: #718fb2;
+@icon_clr_hover: #457ec1;
+@icon_clr_red:#ff0000;
+@icon_clr_blue:#00b4ff;
+@icon_clr_green:#1eff00;
+//border
+@border_frame: 1px #2c3f5c solid;
+@border_dialog_frame:1px solid #162438;
+@border_unblur: 1px #162438 solid;
+@border_subfrme: 1px #2c3f5c solid;
+@border_hover: 1px #2e5483 solid;
+@border_tableline: 2px #2c3f5c solid;
+@border_randc: 2px #2c3f5c solid;
+@border_randchover: 2px #2e5483 solid;
+@border_lbbtn: 1px #0a223f solid;
+@border_black: 1px #000000 solid;
+@border_form_disable: 1px #1f2e46 solid;
+//Bgcolor Frame
+@header_bg: linear-gradient(#122955, #04152a);
+@header_tb_bg: linear-gradient(to bottom, #122955, #04152a);
+@wbk_header_bg: -webkit-linear-gradient(#122955, #04152a);
+@header_select_bg: #112955;
+@leftbar_bg: linear-gradient(#122955, #04152a);
+@wbk_leftbar_bg: -webkit-linear-gradient(#122955, #04152a);
+@leftmenu_bg: linear-gradient(to right, #122955, #04152a);
+@leftbottombtn_bg: #071932;
+@wbk_leftmenu_bg: linear-gradient(to right, #122955, #04152a);
+@canvas_bg: #0c192a;
+@rightbar_bg_color: #0d1c30;
+//Bgcolor com
+@bg_bgClr: #091524;
+@bg_mainClr: #0d325e;
+@bg_form: #051221; /*btn too*/
+@bg_form_disable:#0f2034;
+@bg_form_hover: #071932;
+@bg_bgClr_darklest: #051221;
+@bg_bgClr_light: #0c1829;
+//dialog
+@bg_dtitle: #102853;
+@bg_dlg_form: #071932;
+@bg_dlg_bg: #0c192a;
+
+@shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+@shodowin: inset 0px 0px 100px rgba(0, 0, 0, 0.2);
+@shadowlbbtn: -5px -4px 10px rgba(0, 0, 0, 0.2);
+@shadowTop: 4px 0 15px rgba(0, 0, 0, 0.5);
+@shadowBottom: 0px 3px 10px rgba(0, 0, 0, 0.5);
+//An
+@keyframes fadein {
+  from {
+    height: 0rem;
+    opacity: 0; 
+  }
+  to {
+    height: 0.75rem;
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  from {
+    
+    opacity:0; 
+  }
+  to {
+   
+    opacity: 1;
+  }
+}
+@keyframes textfadein {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes blockfadein {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes sidedown {
+  from {
+    height: 0;
+  }
+  to {
+    height: 0.56rem;
+  }
+}
+@keyframes listhover {
+    form{
+  
+    }
+    to{
+      background: @bg_mainClr;
+      color: @Font_clr_main;
+    }
+    
+  }
+  @keyframes listhoverb {
+    form{
+  
+    }
+    to{
+      background: @leftbottombtn_bg;
+      color: @Font_clr_main;
+    }
+    
+  }
+  @keyframes dialogMenuHover{
+      from{
+
+      }
+      to{
+        background: @bg_form_hover;
+        color: @Font_clr_main;
+      }
+  }
+  @keyframes rightbarSlidfade{
+    from{
+      max-width: 0%;
+      opacity: 0;
+      
+    }
+    to{
+      max-width: 40%;
+      opacity: 1;
+    }
+}
+@keyframes rightbarSlidein{
+  from{
+    max-width: 0%;
+    
+  }
+  to{
+    max-width: 40%;
+    
+  }
+}
+
+//scroll
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+  width: 4px;
+  height: 0.1rem;
+  background-color: @bg_bgClr_darklest;
+  position: absolute;
+  right: 0;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  background-color: @bg_bgClr_darklest;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  //-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #2d5280;
+}
+//vue动画
+.fade-enter-active {
+  animation: fadeout .5s;
+}
+ .fade-leave-active {
+  animation: fadeout .5s reverse;
+}
+
+// .fade-enter, .fade-leave-to {
+//   opacity: 0;
+// }
+
+.slide-enter-active {
+  animation: rightbarSlidfade .4s;
+}
+ .slide-leave-active {
+  animation: rightbarSlidfade .3s reverse;
+}
+
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{
+  color:@Font_clr_sub;
+  font-size:16px;
+  }
+   
+  input:-moz-placeholder,textarea:-moz-placeholder{
+  color:@Font_clr_sub;
+  font-size:16px;
+  }
+   
+  input::-moz-placeholder,textarea::-moz-placeholder{
+  color:@Font_clr_sub;
+  font-size:16px;
+  }
+  input:-ms-input-placeholder,textarea:-ms-input-placeholder{
+  color:@Font_clr_sub;
+  font-size:16px;
+  }
+  .-webkit-fz6{
+                 /* defout most smallest:12px*/
+                 -webkit-font-size: 12px;
+                 -webkit-line-height: 20px;
+                 /*  字体缩放12×0.5= 6px,
+                     translate调整位置
+                    取父级盒子宽度的负50% -400px * 50% = -200px*/
+                -webkit-transform: scale(0.5) translate(-200px,0px) ;
+                 /* -ms-transform: ;
+                -o-transform: ;
+                 transform: ; 
+                 -webkit-min-device-pixel-ratio:0;*/
+                -webkit-letter-spacing: 1px;
+            }

@@ -1,0 +1,274 @@
+@import 'bass.less';
+// .ivu-select-single .ivu-select-selection .ivu-select-placeholder{
+//   color:@Font_clr_sub;
+// }
+.ivu-radio-inner {
+  display: inline-block;
+  width: 0.18rem;
+  height: 0.18rem;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: #0d1c30;
+  border: @border_randchover;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+.ivu-radio-checked .ivu-radio-inner {
+  border-color: @border_hover;
+}
+.ivu-radio-wrapper {
+  font: @Font_zn14;
+  color: @Font_clr_sub;
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+  white-space: nowrap;
+  margin-right: 0.08rem;
+  cursor: pointer;
+}
+
+.ivu-radio-inner:after {
+  position: absolute;
+  width: 0.08rem;
+  height: 0.08rem;
+  left: 0.03rem;
+  top: 0.03rem;
+  border-radius: 50%;
+  display: table;
+  border-top: 0;
+  border-left: 0;
+  content: ' ';
+  background-color: #87a6c6;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0);
+}
+.ivu-select-item {
+  background: @bg_form;
+  color: @Font_clr_sub !important;
+  margin: 0;
+  line-height: 0.36rem;
+  padding: 7px;
+  clear: both;
+  font-size: 0.14rem;
+  white-space: nowrap;
+  list-style: none;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+.ivu-input:focus {
+  border-color: @icon_clr_hover !important;
+  outline: 0;
+  box-shadow: none;
+}
+.ivu-dropdown-item {
+  color: @Font_clr_sub !important;
+  font: @Font_zn14 !important;
+  line-height: 0.36rem !important;
+}
+.ivu-dropdown-item:hover {
+  background: @Font_clr_btnhover !important;
+  color: @Font_clr_main !important;
+}
+.ivu-select-dropdown {
+  background-color: @header_select_bg;
+  margin: 2px 1px;
+  padding: 0;
+  border: @border_hover;
+}
+.ivu-select-item-focus {
+  background-color: @header_select_bg;
+}
+.ivu-select-selection {
+  background: @bg_form;
+  border: @border_tableline;
+}
+.ivu-select-visible .ivu-select-selection {
+  background: @bg_form;
+  border: @border_frame;
+  box-shadow: none;
+  height: 0.36rem;
+}
+
+.ivu-select-disabled .ivu-select-selection { 
+  cursor: not-allowed;
+  color: @disable;
+  background: @bg_form_disable;  
+  &:hover {
+    border:@border_form_disable;
+  }
+}
+
+.ivu-select-selection-focused,
+.ivu-select-selection:hover {
+  border: @border_hover;
+}
+.ivu-select-selection {
+  background: @bg_bgClr;
+  border: @border_frame;
+}
+.ivu-select {
+  color: @Font_clr_sub;
+}
+.ivu-select-item:hover {
+  background: @Font_clr_unblur;
+}
+.ivu-transfer-list-content-item {
+  color: @Font_clr_sub;
+}
+.ivu-transfer-list-content-item:hover {
+  background: @bg_form;
+}
+.ivu-transfer-list-header {
+  height: 0.36rem;
+  background: @bg_dtitle;
+  color: @Font_clr_sub;
+  padding: 7px 16px;
+  border: @border_frame;
+  font: @Font_zn14;
+}
+.ivu-transfer-list {
+  height: 300px;
+  width: calc(50% - 0.32rem);
+  padding-top: 0.35rem;
+}
+.ivu-table-hidden {
+  visibility: inherit;
+}
+.ivu-transfer-list-body {
+  border: @border_frame;
+  border-top: none;
+}
+.ivu-transfer-list-header {
+  border-radius: 2px 2px 0 0;
+}
+
+.ivu-transfer-list-body {
+  border-radius: 0 0 2px 2px;
+  background: @bg_form;
+}
+.ivu-select-single .ivu-select-selection {
+  position: relative;
+  height: 0.36rem;
+  font: @Font_zn14;
+}
+
+.ivu-select-single .ivu-select-selection .ivu-select-placeholder,
+.ivu-select-single .ivu-select-selection .ivu-select-selected-value {
+  display: block;
+  height: 0.34rem;
+  line-height: 0.34rem;
+  font: @Font_zn14;
+  line-height: 0.34rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ivu-btn-small {
+  padding: 1px 7px 2px;
+  font-size: 12px;
+  border-radius: 3px;
+  width: 0.3rem;
+}
+.ivu-btn-primary.disabled,
+.ivu-btn-primary.disabled.active,
+.ivu-btn-primary.disabled:active,
+.ivu-btn-primary.disabled:focus,
+.ivu-btn-primary.disabled:hover,
+.ivu-btn-primary[disabled],
+.ivu-btn-primary[disabled].active,
+.ivu-btn-primary[disabled]:active,
+.ivu-btn-primary[disabled]:focus,
+.ivu-btn-primary[disabled]:hover,
+fieldset[disabled] .ivu-btn-primary,
+fieldset[disabled] .ivu-btn-primary.active,
+fieldset[disabled] .ivu-btn-primary:active,
+fieldset[disabled] .ivu-btn-primary:focus,
+fieldset[disabled] .ivu-btn-primary:hover {
+  background: @rightbar_bg_color;
+  border: @border_frame;
+}
+.ivu-input {
+  background: @bg_form !important;
+  border: @border_frame !important;
+  font: @Font_zn14 !important;
+  color: @Font_clr_sub !important;
+  height: 0.34rem;
+  line-height: 0.34rem;
+}
+ivu-select-placeholder {
+  color: white;
+}
+.ivu-table th {
+  background-color: @bg_form;
+  color: @Font_clr_sub;
+  width: 50px;
+  height: 40px;
+  border-bottom: @border_frame;
+}
+table {
+  border-collapse: separate;
+}
+.ivu-table {
+  color: @Font_clr_sub;
+  background: @bg_form;
+}
+.ivu-table td {
+  background: @bg_bgClr;
+  height: 40px;
+  border-color: @Font_clr_unblur;
+}
+.ivu-table:after {
+  background: none;
+}
+
+.ivu-table-wrapper {
+  border: @border_frame;
+}
+.ivu-table:before {
+  background-color: @Font_clr_unblur;
+}
+tr.ivu-table-row-hover td {
+  background-color: @Font_clr_unblur;
+}
+
+.ivu-btn-circle-outline.ivu-btn-icon-only,
+.ivu-btn-circle.ivu-btn-icon-only {
+  width: 100%;
+  height: 0.36rem;
+  padding: 0;
+  font-size: 16px;
+  border-radius: 2px;
+  margin-bottom: 0.1rem;
+  background: @rightbar_bg_color;
+  border: @border_frame;
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+  width: 2px;
+  background-color: @Font_clr_unblur;
+  opacity: 0.2;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: @icon_clr_hover;
+  height: 4px;
+}
+.ivu-table-fixed::before {
+  height: 0;
+}
+.removebtn {
+  width: 0.24rem !important;
+  height: 0.24rem !important;
+  padding: 0 !important;
+  font-size: 14px !important;
+  font-weight: bold;
+  line-height: 0.24rem !important;
+  color: #ffffff !important;
+  border-radius: 50% !important;
+  background: red !important;
+  border: none !important;
+}

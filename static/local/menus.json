@@ -1,0 +1,18 @@
+{
+    "id":"100",
+    "name":"Root",
+    "displayName":"Root",
+    "childs":[{
+        "id":"1001",
+        "name":"child-1",
+        "displayName":"child-1"
+    },{
+        "id":"1002",
+        "name":"child-2",
+        "displayName":"child-2"
+    },{
+        "id":"1003",
+        "name":"child-3",
+        "displayName":"child-3"
+    }]
+}

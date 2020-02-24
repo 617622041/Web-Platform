@@ -1,0 +1,454 @@
+/*BASSLESS*/
+/*forme too*/
+/*btn too*/
+@keyframes fadein {
+  from {
+    height: 0rem;
+    opacity: 0;
+  }
+  to {
+    height: 0.75rem;
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes textfadein {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes blockfadein {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes sidedown {
+  from {
+    height: 0;
+  }
+  to {
+    height: 0.56rem;
+  }
+}
+@keyframes listhover {
+  to {
+    background: #0d325e;
+    color: #ffffff;
+  }
+}
+@keyframes listhoverb {
+  to {
+    background: #071932;
+    color: #ffffff;
+  }
+}
+@keyframes dialogMenuHover {
+  to {
+    background: #071932;
+    color: #ffffff;
+  }
+}
+@keyframes rightbarSlidfade {
+  from {
+    max-width: 0%;
+    opacity: 0;
+  }
+  to {
+    max-width: 40%;
+    opacity: 1;
+  }
+}
+@keyframes rightbarSlidein {
+  from {
+    max-width: 0%;
+  }
+  to {
+    max-width: 40%;
+  }
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+  width: 4px;
+  height: 0.1rem;
+  background-color: #051221;
+  position: absolute;
+  right: 0;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  background-color: #051221;
+}
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: #2d5280;
+}
+.fade-enter-active {
+  animation: fadeout 0.5s;
+}
+.fade-leave-active {
+  animation: fadeout 0.5s reverse;
+}
+.slide-enter-active {
+  animation: rightbarSlidfade 0.4s;
+}
+.slide-leave-active {
+  animation: rightbarSlidfade 0.3s reverse;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #718fb2;
+  font-size: 16px;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #718fb2;
+  font-size: 16px;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #718fb2;
+  font-size: 16px;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #718fb2;
+  font-size: 16px;
+}
+.-webkit-fz6 {
+  /* defout most smallest:12px*/
+  -webkit-font-size: 12px;
+  -webkit-line-height: 20px;
+  /*  字体缩放12×0.5= 6px,
+                     translate调整位置
+                    取父级盒子宽度的负50% -400px * 50% = -200px*/
+  -webkit-transform: scale(0.5) translate(-200px, 0px);
+  /* -ms-transform: ;
+                -o-transform: ;
+                 transform: ; 
+                 -webkit-min-device-pixel-ratio:0;*/
+  -webkit-letter-spacing: 1px;
+}
+.lamp-content {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.lamp-header {
+  position: fixed;
+  left: 0px;
+  top: 7px;
+  width: 100%;
+  height: 5.65%;
+  background-image: url("imgs/title.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+.lamp-header .lamp-header-logo {
+  position: fixed;
+  left: -910px;
+  top: 13px;
+  width: 100%;
+  height: 5.65%;
+  background-image: url("imgs/2019LOGO.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+.lamp-header .lamp-header-title {
+  margin: auto;
+  margin-top: 0px;
+  width: 471px;
+  font-size: 36px;
+  font-family: FZCTHJW--GB1-0;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 49px;
+  letter-spacing: 2px;
+  background: linear-gradient(0deg, #5197ff 0%, #80f2ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.lamp-header .lamp-header-title-en {
+  margin: auto;
+  margin-top: 5px;
+  width: 304px;
+  height: 10px;
+  font-size: 13px;
+  font-family: ArialMT;
+  font-weight: bold;
+  color: #2e99d8;
+  letter-spacing: 1px;
+}
+.lamp-header .lamp-header-clock {
+  position: fixed;
+  right: 27px;
+  top: 30px;
+  width: 250px;
+  height: 60px;
+  font-size: 16px;
+  font-family: Adobe Heiti Std R;
+  font-weight: normal;
+  color: #549cff;
+  font-weight: bold;
+  line-height: 28px;
+  text-align: right;
+}
+.lamp-body {
+  padding: 77px 9px 11px 9px;
+  width: calc(100%);
+  height: calc(100%);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+.lamp-body-left {
+  width: 24.5%;
+  height: 100%;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+.lamp-body-left .lamp-content {
+  height: calc(36.33% - 10px);
+  margin-top: 10px;
+  background: rgba(15, 45, 123, 0.5);
+  opacity: 0.8;
+  border-top: 4px solid #0091fc;
+  box-sizing: border-box;
+  padding: 15px 0px 15px 15px;
+}
+.lamp-body-left .lamp-con-radus-border {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #02e8ff;
+  border-radius: 1px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.lamp-body-left .lamp-con-top {
+  margin-top: 0px;
+  height: calc(29.5%);
+}
+.lamp-body-left .lamp-con-middle {
+  height: calc(36.5% - 10px);
+}
+.lamp-body-left .lamp-con-bottom {
+  height: calc(34% - 10px);
+}
+.lamp-body-right {
+  width: 24.5%;
+  height: 100%;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+.lamp-body-right .lamp-content {
+  height: calc(36.33% - 10px);
+  margin-top: 10px;
+  background: rgba(15, 45, 123, 0.5);
+  opacity: 0.8;
+  border-top: 4px solid #0091fc;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.lamp-body-right .lamp-con-top {
+  margin-top: 0px;
+  height: calc(29.5%);
+}
+.lamp-body-right .lamp-con-middle {
+  height: calc(36.5% - 10px);
+}
+.lamp-body-right .lamp-con-bottom {
+  height: calc(34% - 10px);
+}
+.lamp-body-center {
+  width: calc(51% - 20px);
+  margin: 0px 10px 0px 10px;
+  height: 100%;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+.lamp-body-center div {
+  box-sizing: border-box;
+}
+.lamp-body-center .lamp-h2 {
+  text-align: left;
+  align-items: center;
+  padding: 0px 0px 0px 7px;
+  font-size: 18px;
+  font-family: SourceHanSansCN-Medium;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 18px !important;
+}
+.lamp-body-center .lamp-h3 {
+  text-align: left;
+  align-items: center;
+  padding: 0px;
+  font-size: 12px !important;
+  -webkit-transform: scale(0.7) translate(-84px, 0px);
+  font-family: ArialMT;
+  color: #ffffff;
+  line-height: 17px !important;
+}
+.lamp-body-center .lamp-body-center-up {
+  width: 100%;
+  height: 68%;
+  margin-top: 0px;
+  background-size: cover;
+}
+.lamp-body-center .lamp-body-center-up .lamp-map {
+  width: 100% !important;
+  height: calc(100%) !important;
+  border-top: 4px solid #0091fc;
+}
+.lamp-body-center .lamp-body-center-down {
+  width: 100%;
+  height: calc(35% - 10px);
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  background: rgba(15, 45, 123, 0.5);
+  opacity: 0.8;
+  border-top: 4px solid #0091fc;
+}
+.lamp-body-center .lamp-body-center-down .lamp-down-content {
+  width: 50%;
+  height: 100%;
+  padding: 15px;
+}
+.lamp-body-data-cell {
+  width: 100%;
+  height: 100%;
+}
+.lamp-body-center-map {
+  width: 100%;
+  height: 100%;
+}
+.lamp-search {
+  position: absolute;
+  left: 67.5%;
+  top: 100px;
+  z-index: 100;
+  width: 120px;
+  height: 44px;
+  background: #4e4c6c;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 0px 10px 0px rgba(18, 21, 34, 0.51);
+  border-radius: 4px;
+  font-size: 20px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 20px;
+}
+.lamp-search:hover {
+  background: rgba(78, 76, 108, 0.5);
+}
+.infowindow-content {
+  width: 200px;
+  height: 100px;
+}
+.amap-info-body {
+  margin: 5px 0px 0px 10px;
+}
+.amap-info-content {
+  border: 2px black solid;
+  background-color: rgba(18, 21, 34, 0.91);
+}
+.lamp-map-controller-panel {
+  position: fixed;
+  z-index: 170;
+  bottom: 32.2%;
+  right: 25.2%;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #a6abe440;
+  background-clip: border-box;
+  width: 100px;
+  height: 31px;
+  border-radius: 0.05rem;
+  padding: 5px 0px 5px 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+.lamp-map-controller-panel .lamp-switch {
+  position: relative;
+  background-color: #081763;
+}
+.lamp-map-controller-panel .lamp-switch-name {
+  position: relative;
+  height: 100%;
+  width: 0.6rem;
+  padding-top: 2px;
+}
+.lamp-table-main {
+  width: 100%;
+  height: 100%;
+}
+.lamp-local-row {
+  height: 36px !important;
+  border-top: 1px #1D57A2 solid !important;
+  align-content: left;
+  font-size: 12px;
+  text-align: left;
+  padding-left: 18px;
+  padding-right: 18px;
+  box-sizing: border-box;
+  vertical-align: middle !important;
+}
+.lamp-local-row .lamp-head-span {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: -webkit-flex;
+  text-align: center;
+}
+.lamp-local-row .lamp-data-span {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: -webkit-flex;
+  font-family: Adobe Heiti Std R;
+  font-weight: normal;
+  color: #a3b5d9;
+}
+.lamp-local-row:hover {
+  background-color: rgba(49, 55, 82, 0.3);
+}
+.lamp-local-head {
+  height: 36px !important;
+  font-size: 15px;
+  font-family: Adobe Heiti Std R;
+  font-weight: normal;
+  color: #d1d7ef;
+  background: #16548e;
+  border: 1px solid #1d57a2;
+  text-align: center !important;
+}
+.lamp-local-col {
+  vertical-align: middle !important;
+  height: 100%;
+}

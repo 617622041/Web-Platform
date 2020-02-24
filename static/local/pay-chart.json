@@ -1,0 +1,45 @@
+{
+  "title": {
+    "text": "支付分析",
+    "x": "left",
+    "textStyle":{
+      "color":"#FFF"
+    }
+  },
+    "tooltip": {
+      "trigger": "item",
+      "formatter": "{a} <br/>{b}: {c} ({d}%)"
+    },
+    "legend": {
+      "orient": "vertical",
+      "x": "right",
+      "data":[]
+    },
+    "series": [
+      {
+        "name": "访问来源",
+        "type": "pie",
+        "radius": ["50%", "70%"],
+        "avoidLabelOverlap": true,
+        "label": {
+            "normal": {
+            "show": false,
+            "position": "center"
+          },
+          "emphasis": {
+            "show": false,
+            "textStyle": {
+                "fontSize": "30",
+                "fontWeight": "bold"
+            }
+          }
+        },
+        "labelLine": {
+            "normal": {
+                "show": false
+          }
+        },
+        "data":[]
+      }
+    ]
+  }
